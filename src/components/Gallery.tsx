@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { Image } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
+import { toast } from 'sonner';
 
 const images = [
   {
@@ -37,7 +38,7 @@ const Gallery = () => {
     <section id="gallery" className="py-20 px-6">
       <div className="max-w-5xl mx-auto">
         <AnimatedSection>
-          <div className="text-center mb-16">
+          <div className="text-center mb-8">
             <span className="inline-block px-3 py-1 text-xs font-medium bg-primary/10 text-primary rounded-full mb-4">
               Through My Lens
             </span>
@@ -45,6 +46,17 @@ const Gallery = () => {
             <p className="text-muted-foreground max-w-2xl mx-auto">
               A collection of moments captured through my camera that tell stories and preserve memories.
             </p>
+          </div>
+          
+          {/* Featured illustration */}
+          <div className="max-w-sm mx-auto mb-16">
+            <div className="relative rounded-full overflow-hidden bg-pink-50/50 p-6">
+              <img 
+                src="/lovable-uploads/f9b739fc-ffa7-4ed7-ba89-10a015e00c15.png" 
+                alt="Cute cartoon girl with bubble tea" 
+                className="w-full h-auto"
+              />
+            </div>
           </div>
         </AnimatedSection>
 
