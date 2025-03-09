@@ -42,12 +42,26 @@ const AnimatedSection = ({
     };
   }, []);
 
+  const getAnimationClass = () => {
+    if (!isVisible) return 'opacity-0';
+    
+    switch(animation) {
+      case 'fade-in-right':
+        return 'animate-fade-in-right';
+      case 'fade-in-left':
+        return 'animate-fade-in-left';
+      case 'fade-in':
+      default:
+        return 'animate-fade-in';
+    }
+  };
+
   return (
     <div 
       ref={sectionRef} 
       className={cn(
         'opacity-0',
-        isVisible && `animate-${animation}`,
+        isVisible && getAnimationClass(),
         className
       )}
       style={{ animationDelay: `${delay}ms` }}
