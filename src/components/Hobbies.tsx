@@ -24,11 +24,6 @@ const hobbies = [
     icon: <Palette className="w-6 h-6 text-primary" />,
   },
   {
-    title: 'Coding',
-    description: 'Working on personal projects and learning new programming languages.',
-    icon: <Code className="w-6 h-6 text-primary" />,
-  },
-  {
     title: 'Cycling',
     description: 'Exploring nature and staying active through regular cycling adventures.',
     icon: <Bike className="w-6 h-6 text-primary" />,

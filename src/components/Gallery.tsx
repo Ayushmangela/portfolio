@@ -3,30 +3,32 @@ import { useState } from 'react';
 import { Image } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
 import { toast } from 'sonner';
+import myImage from '../assets/img1.png';
+
 
 const images = [
   {
-    url: 'https://images.unsplash.com/photo-1649972904349-6e44c42644a7',
+    url: myImage, // Replacing URL with the local image
     title: 'Quiet Moments',
     category: 'Lifestyle',
     description: 'One peaceful afternoon during my final semester, I found this perfect spot by the window. The sunlight was streaming in just right, creating this serene atmosphere that helped me focus on my studies while still feeling connected to the outside world.'
   },
   {
-    url: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158',
-    title: 'Creative Space',
-    category: 'Workspace',
+    url: myImage, // Replacing URL with the local image
+    title: 'Fuuny moment',
+    category: 'Lifestyle',
     description: 'I designed this little corner of my room to be my creative sanctuary. It\'s where I brainstorm project ideas, sketch designs, and let my imagination run free. The plants and natural light help keep my mind fresh and inspired throughout the day.'
   },
   {
-    url: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c',
-    title: 'Collaboration',
-    category: 'People',
+    url: myImage, // Replacing URL with the local image
+    title: 'hehehe lol ',
+    category: 'Lifestyle',
     description: 'This was taken during our team project for the Computer Science fair. We spent weeks collaborating on an AI-driven application that ended up winning second place! The energy in the room that day was incredible - everyone bringing their unique skills to the table.'
   },
   {
-    url: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f',
-    title: 'Focused Design',
-    category: 'Technology',
+    url: myImage, // Replacing URL with the local image
+    title: 'I am Noob',
+    category: 'Lifestyle',
     description: 'Late night coding session during my web development course. I was working on my first major project that combined both frontend and backend skills. The satisfaction of seeing everything finally work after hours of debugging was absolutely worth the lack of sleep!'
   },
 ];
